@@ -1,0 +1,10 @@
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button-list ul li { display: inline; }
