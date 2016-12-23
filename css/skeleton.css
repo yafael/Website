@@ -221,6 +221,27 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
+.button.button-home,
+button.button-home,
+input[type="submit"].button-home,
+input[type="reset"].button-home,
+input[type="button"].button-home {
+  color: #FEF4e9;
+  background-color: #FAA51A;
+  border-color: #FAA51A; }
+.button.button-home:hover,
+button.button-home:hover,
+input[type="submit"].button-home:hover,
+input[type="reset"].button-home:hover,
+input[type="button"].button-home:hover,
+.button.button-home:focus,
+button.button-home:focus,
+input[type="submit"].button-home:focus,
+input[type="reset"].button-home:focus,
+input[type="button"].button-home:focus {
+  color: #FEF4e9;
+  background-color: #F78D1D;
+  border-color: #FFFFFF; }
 
 
 /* Forms
