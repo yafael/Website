@@ -7,7 +7,8 @@ $(document).ready(function(){
     $("#pr6").hide()
 
     $("#MRC").click(function(){
-	 if($('#pr6').is(':visible')) {
+	destroyVideo();	 
+	if($('#pr6').is(':visible')) {
     	  $("#pr6").fadeOut(1200, function(){
 	    $("#pr1").fadeIn(1200)
 	  });  
@@ -33,6 +34,12 @@ $(document).ready(function(){
     });
 
     $("#OCR").click(function(){
+	destroyVideo();
+	$(function(){
+    	  $('.button').click(function(){      
+            $('iframe').attr('src', $('iframe').attr('src'));
+          });
+	});
 	if($('#pr6').is(':visible')) {
     	  $("#pr6").fadeOut(1200, function(){
 	    $("#pr2").fadeIn(1200)
@@ -59,6 +66,12 @@ $(document).ready(function(){
     });
 
     $("#REF").click(function(){
+	destroyVideo();
+	$(function(){
+    	  $('.button').click(function(){      
+            $('iframe').attr('src', $('iframe').attr('src'));
+          });
+	});	
 	if($('#pr6').is(':visible')) {
     	  $("#pr6").fadeOut(1200, function(){
 	    $("#pr3").fadeIn(1200)
@@ -85,6 +98,12 @@ $(document).ready(function(){
     });
 
     $("#AEV").click(function(){
+	destroyVideo();
+	$(function(){
+    	  $('.button').click(function(){      
+            $('iframe').attr('src', $('iframe').attr('src'));
+          });
+	});	
 	if($('#pr6').is(':visible')) {
     	  $("#pr6").fadeOut(1200, function(){
 	    $("#pr4").fadeIn(1200)
@@ -111,6 +130,12 @@ $(document).ready(function(){
     });
     
     $("#SCI").click(function(){
+	destroyVideo();
+	$(function(){
+    	  $('.button').click(function(){      
+            $('iframe').attr('src', $('iframe').attr('src'));
+          });
+	});	
 	if($('#pr6').is(':visible')) {
     	  $("#pr6").fadeOut(1200, function(){
 	    $("#pr5").fadeIn(1200)
@@ -137,6 +162,12 @@ $(document).ready(function(){
     });
 
     $("#NNC").click(function(){
+	destroyVideo();
+	$(function(){
+    	  $('.button').click(function(){      
+            $('iframe').attr('src', $('iframe').attr('src'));
+          });
+	});	
 	if($('#pr5').is(':visible')) {
     	  $("#pr5").fadeOut(1200, function(){
 	    $("#pr6").fadeIn(1200)
@@ -162,4 +193,18 @@ $(document).ready(function(){
 	}        
     });
 });    
+
+function destroyVideo(){
+    var url1 = $('#vid1').attr('src');
+    $('#vid1').attr('src', '');
+    $('#vid1').attr('src', url1);
+
+    var url2 = $('#vid2').attr('src');
+    $('#vid2').attr('src', '');
+    $('#vid2').attr('src', url2);
+
+    var url4 = $('#vid4').attr('src');
+    $('#vid4').attr('src', '');
+    $('#vid4').attr('src', url4);
+}
 
